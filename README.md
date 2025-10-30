@@ -1,6 +1,6 @@
-# Nuxt Minimal Starter
+# Chat
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+http://chatsimulation2025.atwebpages.com/
 
 ## Setup
 
