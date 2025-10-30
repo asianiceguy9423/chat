@@ -2,7 +2,7 @@
 
 http://chatsimulation2025.atwebpages.com/
 
-## Setup
+## 使用技術
 
 Make sure to install dependencies:
 
