@@ -17,4 +17,4 @@ http://chatsimulation2025.atwebpages.com/
 ## 更新日誌
 
 - **2025/10/30**
-  - 部屬網站
+  - 部署網站
