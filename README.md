@@ -4,72 +4,13 @@ http://chatsimulation2025.atwebpages.com/
 
 ## 使用技術
 
-Make sure to install dependencies:
+- **前端框架:**  使用 Nuxt 3（基於 Vue 3），搭配 Composition API 撰寫元件邏輯， 透過 Pinia 實現狀態管理，並結合 SCSS 提升樣式的可維護性與彈性。
+- **後端與資料庫:** 以 PHP 作為後端語言，連接 MySQL 資料庫，實現前後端分離架構，優化資料傳輸效率並提升系統擴展性與開發靈活度。
+- **數據請求:** 全站資料統一由 Pinia 管理，並透過 Pinia 的 actions 搭配 全域函式$fetch 向後端 PHP API 發送請求，以執行資料的讀取與提交，確保前台內容的即時同步與一致性。
 
-```bash
-# npm
-npm install
 
-# pnpm
-pnpm install
 
-# yarn
-yarn install
+## 更新日誌
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- **2025/10/30**
+  - 部屬網站
