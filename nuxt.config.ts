@@ -2,6 +2,7 @@
 // 'http://chatsimulation2025.atwebpages.com'
 export default defineNuxtConfig({
   ssr: true,
+  srcDir: 'app/',
   app :{
     head: {
       title: '舊式風格聊天室'
