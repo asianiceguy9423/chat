@@ -3,7 +3,7 @@
 [http://chatsimulation2025.atwebpages.com/](https://asianiceguy9423.alwaysdata.net/)
 <br>
 這是一款模擬 匿名聊天室kekeke 的網站，主打懷舊情懷。
-記取kekeke當年教訓，圖片僅能用網址顯示，嚴厲斥責張貼任何法圖片。
+記取kekeke當年教訓，圖片僅能用網址顯示，嚴厲斥責任何非法圖片。
 <hr>
 
 ## 使用技術
