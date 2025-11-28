@@ -1,7 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// 'http://chatsimulation2025.atwebpages.com'
 export default defineNuxtConfig({
-  // 禁用 SSR
-  ssr: false,
+  ssr: true,
+  srcDir: 'app/',
   app :{
     head: {
       title: '舊式風格聊天室'
@@ -27,7 +28,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiUrl: process.env.NODE_ENV === 'production'
-      ? 'http://chatsimulation2025.atwebpages.com'
+      ? 'https://asianiceguy9423.alwaysdata.net'
       : 'http://localhost/chatroom'
     }
   }

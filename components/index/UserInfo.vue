@@ -30,6 +30,25 @@ import { ref } from 'vue';
 const chatStore = useChatCounterStore();
 const userName = ref('');
 const userChatInfo = ref('');
+const getTime = ()=>{
+  const now = new Date();
+  // --- 日期部分 ---
+  const year = now.getFullYear();
+  const month = String(now.getMonth()+1).padStart(2,'0');
+  const day = String(now.getDate()).padStart(2,'0');
+  // --- 時間部分 ---
+  const fullHours = now.getHours();
+  const amORpm = fullHours < 12 ? '上午' : '下午'; 
+  let displayHours = fullHours % 12;
+  if( displayHours === 0){
+    displayHours = 12;
+  }
+  const hours = String(displayHours).padStart(2,'0');
+
+  const minutes = String(now.getMinutes()).padStart(2,'0');
+
+  return `${year}/${month}/${day} ${amORpm} ${hours}:${minutes}`;
+}
 
 //submit
 const chatFormData = () =>{
@@ -41,6 +60,10 @@ const chatFormData = () =>{
   formData.append(
     'chat_info',
     userChatInfo.value
+  );
+  formData.append(
+    'chat_time',
+    getTime()
   );
   return formData;
 }

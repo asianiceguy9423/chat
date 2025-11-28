@@ -1,0 +1,9 @@
+name: chatroom-nuxt
+type: web
+builder: nodejs
+build:
+  commands:
+    - npm install
+    - npm run build
+run:
+  command: node .output/server/index.mjs

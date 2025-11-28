@@ -22,24 +22,12 @@
 import { useChatCounterStore } from '../stores/chatCounter';
 import { storeToRefs } from 'pinia';
 import { computed, onMounted } from 'vue';
-import Pusher from 'pusher-js';
 
 const chatStore = useChatCounterStore();
 const { chatRoomInfo } = storeToRefs(chatStore);
 
 onMounted(()=>{
   chatStore.FETCH_CHATROOM_INFO();
-
-  // 建立 Pusher 連線
-  const pusher = new Pusher('1a927ed74c42bb388362', {
-    cluster: 'ap3'
-  });
-
-  const channel = pusher.subscribe('my-channel');
-  channel.bind('my-event', function(data) {
-    // 把即時訊息插入到 Pinia 狀態
-    chatStore.chatRoomInfo.unshift(data);
-  });
 })
 
 const displayedChatInfo = computed(()=>{

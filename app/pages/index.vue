@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import userInfo from '../components/index/userInfo.vue'
+import userInfo from '../components/index/UserInfo.vue'
 import ChatRoom from '../components/index/ChatRoom.vue'
 
 </script>
@@ -19,4 +19,5 @@ import ChatRoom from '../components/index/ChatRoom.vue'
   height: 100vh;
   gap: 12px;
 }
+
 </style>

@@ -4,9 +4,9 @@ import { defineStore } from "pinia";
 export const useChatCounterStore = defineStore('chatCounter',{
   state: ()=>({
     chatRoomInfo: [
-      { user: 'aa', chatInfo: 'aa says' },
-      { user: 'bb', chatInfo: 'bb says' },
-      { user: 'cc', chatInfo: 'cc says' },
+      { user: 'aa', chatInfo: 'aa says', chatTime: '' },
+      { user: 'bb', chatInfo: 'bb says', chatTime: '' },
+      { user: 'cc', chatInfo: 'cc says', chatTime: '' },
     ],
     LoadingCompleted: false,
     isLoading: false,
@@ -73,9 +73,9 @@ export const useChatCounterStore = defineStore('chatCounter',{
         });
 
         if(result.success) {
-          this.LoadingCompleted = false;
+          // this.LoadingCompleted = false;
           
-          await this.FETCH_CHATROOM_INFO();
+          // await this.FETCH_CHATROOM_INFO();
           const message = result.message || '成功傳遞聊天訊息';
           console.log(message);
           return {
@@ -98,11 +98,5 @@ export const useChatCounterStore = defineStore('chatCounter',{
         }
       }
     },
-    ADD_CHAT_ROOM_INFO(userName, userChatInfo){
-      this.chatRoomInfo.push({
-        user: userName,
-        chatInfo: userChatInfo
-      })
-    }
   }
 })
